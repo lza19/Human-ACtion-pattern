@@ -1,44 +1,47 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
+body{
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
-
 .container {
-    text-align: center;
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 700px;  
+    height: 500px; 
+    background-color: #2864d3; 
+    border-radius: 30px; /* ขอบมน */
+    overflow: hidden; /* ซ่อนเนื้อหาที่เกินขอบ */
 }
 
-h1 {
-    color: #333;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.to{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #ffffff;
+    background-color: rgba(116, 116, 116, 0.0);
+    margin-top: 60px;
+    
 }
 
-.button-container {
-    display: inline;
+.button-container{
+    background-color: rgba(116, 116, 116, 0.1);
+    display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 260px; 
+    
 }
 
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
+.button-container button {
+    width: 250px; /* กำหนดความกว้างที่แน่นอน */
+    height: 50px; /* กำหนดความสูงที่แน่นอน */
     font-size: 1.2em;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
+    margin-top: 15px;
 }

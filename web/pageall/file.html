@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VEG - โหมดเรียลไทม์</title>
+    <link rel="stylesheet" href="cs1/Page1.css">
+    <link rel="stylesheet" href="cs1/Page2.css">
 </head>
 <body>
-    <h1>file</h1>
+    <div class="container">
+        <h1>โหมดเรียลไทม์</h1>
+        <p id="status">กำลังเข้าถึงกล้อง...</p>
+        
+        <video id="video" muted autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+
+        <button id="record-button">บันทึก</button>
+        <div id="download-section" style="display: none;">
+            <a id="download-link" href="#" download="my-video.webm">ดาวน์โหลดวิดีโอ</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // เรียกฟังก์ชันเปิดกล้องทันทีที่หน้าเว็บโหลด
+            openCamera();
+        });
+    </script>
 </body>
 </html>

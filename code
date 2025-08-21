@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;  /* กำหนดความกว้าง 50 พิกเซล */
+    height: 50px; /* กำหนดความสูง 50 พิกเซล */
+    background-color: #f9f9f9; /* สีเทาอ่อน */
+    border: 1px solid #ccc; /* เส้นขอบ */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* เงา */
+    border-radius: 5px; /* ขอบมน */
+    padding: 20px; /* เพิ่มระยะห่างภายใน */
+    overflow: hidden; /* ซ่อนเนื้อหาที่เกินขอบ */
+}
